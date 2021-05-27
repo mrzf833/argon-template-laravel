@@ -47,7 +47,7 @@
   <!--   Core   -->
   <script src="{{ asset('assets/js/plugins/jquery/dist/jquery.min.js') }}"></script>
   <script src="{{ asset('assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <!--   Add Plugin JS  -->
+  <!--   Add Optional Plugin JS  -->
   @yield('scriptPlugins')
   <!--   Argon JS   -->
   <script src="{{ asset('assets/js/argon-dashboard.min.js?v=1.1.1') }}"></script>
