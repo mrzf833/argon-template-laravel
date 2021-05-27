@@ -1,4 +1,5 @@
 @extends('layouts.layout2.layout')
+
 @section('header')
 <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
     <div class="container-fluid">
@@ -373,4 +374,9 @@
     <!-- Footer -->
     @include('layouts.layout2.footer')
 </div>
+@endsection
+
+@section('scriptPlugins')
+    <script src="{{ asset('assets/js/plugins/chart.js/dist/Chart.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/chart.js/dist/Chart.extension.js') }}"></script>
 @endsection

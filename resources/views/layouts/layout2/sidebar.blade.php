@@ -88,28 +88,28 @@
             </form>
             <!-- Navigation -->
             <ul class="navbar-nav">
-                <li class="nav-item  active ">
-                    <a class="nav-link  active " href="{{ route('dashboard') }}">
+                <li class="nav-item  {{ request()->routeIs('dashboard') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">
                         <i class="ni ni-tv-2 text-primary"></i> Dashboard
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ route('icons') }}">
+                <li class="nav-item {{ request()->routeIs('icons') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('icons') ? 'active' : '' }}" href="{{ route('icons') }}">
                         <i class="ni ni-planet text-blue"></i> Icons
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ route('maps') }}">
+                <li class="nav-item {{ request()->routeIs('maps') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('maps') ? 'active' : '' }}" href="{{ route('maps') }}">
                         <i class="ni ni-pin-3 text-orange"></i> Maps
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ route('profile') }}">
+                <li class="nav-item {{ request()->routeIs('profile') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('profile') ? 'active' : '' }}" href="{{ route('profile') }}">
                         <i class="ni ni-single-02 text-yellow"></i> User profile
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ route('tables') }}">
+                <li class="nav-item {{ request()->routeIs('tables') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('tables') ? 'active' : '' }}" href="{{ route('tables') }}">
                         <i class="ni ni-bullet-list-67 text-red"></i> Tables
                     </a>
                 </li>
