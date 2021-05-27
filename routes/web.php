@@ -29,4 +29,20 @@ Route::get('dashboard', function(){
 Route::get('register', function(){
     return view('register');
 })->name('register');
+
+Route::get('icons', function(){
+    return view('icons');
+})->name('icons');
+
+Route::get('maps', function(){
+    return view('maps');
+})->name('maps');
+
+Route::get('profile', function(){
+    return view('profile');
+})->name('profile');
+
+Route::get('tables', function(){
+    return view('tables');
+})->name('tables');
 // -----------------------------------------------------------------
